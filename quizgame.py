@@ -42,3 +42,4 @@ questions = [
         "answer": "C"
     }
 ]
+random.shuffle(questions)
