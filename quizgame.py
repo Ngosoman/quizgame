@@ -43,3 +43,28 @@ questions = [
     }
 ]
 random.shuffle(questions)
+
+
+score = 0
+print("Welcome to the Quiz Game!\n")
+
+for q in questions:
+    print(q["question"])
+    for key, value in q["choices"].items():
+        print(f"  {key}: {value}")
+    
+    while True:
+        try:
+            user_input = input("Your answer (A/B/C/D): ").strip().upper()
+            if user_input not in ['A', 'B', 'C', 'D']:
+                raise ValueError("Please choose A, B, C, or D.")
+            break
+        except Exception as e:
+            print(f"⚠️ {e}")
+
+
+    if user_input == q["answer"]:
+        print("✅ Correct!\n")
+        score += 1
+    else:
+        print(f"❌ Wrong! Correct answer was {q['answer']}\n")          
