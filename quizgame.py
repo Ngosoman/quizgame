@@ -60,11 +60,21 @@ for q in questions:
                 raise ValueError("Please choose A, B, C, or D.")
             break
         except Exception as e:
-            print(f"⚠️ {e}")
+            print(f"{e}")
 
 
     if user_input == q["answer"]:
-        print("✅ Correct!\n")
+        print("Correct!\n")
         score += 1
     else:
-        print(f"❌ Wrong! Correct answer was {q['answer']}\n")          
+        print(f"Wrong! Correct answer was {q['answer']}\n")          
+
+    print("Quiz Complete!")
+print(f"Your score: {score} out of {len(questions)}")
+
+if score == len(questions):
+    print(" Excellent! You nailed it!")
+elif score >= len(questions) * 0.6:
+    print("Good job! You can do even better.")
+else:
+    print("Try Again. Keep practicing!")
