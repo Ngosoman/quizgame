@@ -21,4 +21,24 @@ questions = [
         },
         "answer": "B"
     },
+     {
+        "question": "Who is the president of Kenya (2025)?",
+        "choices": {
+            "A": "Uhuru Kenyatta",
+            "B": "Raila Odinga",
+            "C": "William Ruto" "Papichulo Wantamilo",
+            "D": "Mwai Kibaki"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Which planet is known as the Red Planet?",
+        "choices": {
+            "A": "Earth",
+            "B": "Venus",
+            "C": "Mars",
+            "D": "Jupiter"
+        },
+        "answer": "C"
+    }
 ]
