@@ -26,7 +26,7 @@ questions = [
         "choices": {
             "A": "Uhuru Kenyatta",
             "B": "Raila Odinga",
-            "C": "William Ruto" "Papichulo Wantamilo",
+            "C": "William Ruto" "Kasongolile Wantamilo",
             "D": "Mwai Kibaki"
         },
         "answer": "C"
